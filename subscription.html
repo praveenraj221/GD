@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CropCare Premium Subscription</title>
+    <link rel="stylesheet" href="subscription.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <h1 class="header-title">Welcome to CropCare Premium</h1>
+        <p class="header-subtitle">Elevate your farming with our AI-driven crop insights, reports, and expert support</p>
+    </header>
+
+    <!-- Subscription Plans Section -->
+    <section class="subscription-section">
+        <h2 class="section-title">Choose Your Plan</h2>
+        <p class="section-subtitle">Flexible pricing plans to meet the needs of every farmer</p>
+
+        <div class="plans-container">
+            <!-- Basic Plan -->
+            <div class="plan-card" id="basic-plan">
+                <div class="plan-header basic">
+                    <h3>Basic Plan</h3>
+                    <div class="price">$4.99 <span>/month</span></div>
+                </div>
+                <div class="plan-body">
+                    <ul class="plan-features">
+                        <li><i class="icon icon-check"></i> AI-Powered Crop Monitoring</li>
+                        <li><i class="icon icon-check"></i> Monthly Reports</li>
+                        <li><i class="icon icon-check"></i> Basic Support</li>
+                        <li><i class="icon icon-cross"></i> Drone Analytics</li>
+                    </ul>
+                </div>
+                <div class="plan-footer">
+                    <button class="btn" onclick="openModal('Basic', 4.99)">Subscribe</button>
+                    <p class="plan-reviews"><i class="icon icon-star"></i> Rated 4.2 by 300 users</p>
+                </div>
+            </div>
+
+            <!-- Standard Plan -->
+            <div class="plan-card popular" id="standard-plan">
+                <div class="plan-header standard">
+                    <h3>Standard Plan</h3>
+                    <div class="price">$7.99 <span>/month</span></div>
+                </div>
+                <div class="plan-body">
+                    <ul class="plan-features">
+                        <li><i class="icon icon-check"></i> Advanced AI Crop Analysis</li>
+                        <li><i class="icon icon-check"></i> Drone-Assisted Analytics</li>
+                        <li><i class="icon icon-check"></i> Unlimited Crop Reports</li>
+                        <li><i class="icon icon-check"></i> 24/7 Email & Chat Support</li>
+                    </ul>
+                </div>
+                <div class="plan-footer">
+                    <button class="btn" onclick="openModal('Standard', 7.99)">Subscribe</button>
+                    <p class="plan-reviews"><i class="icon icon-star"></i> Rated 4.8 by 500 users</p>
+                </div>
+            </div>
+
+            <!-- Premium Plan -->
+            <div class="plan-card" id="premium-plan">
+                <div class="plan-header premium">
+                    <h3>Premium Plan</h3>
+                    <div class="price">$12.99 <span>/month</span></div>
+                </div>
+                <div class="plan-body">
+                    <ul class="plan-features">
+                        <li><i class="icon icon-check"></i> Full AI Suite</li>
+                        <li><i class="icon icon-check"></i> Custom Reports</li>
+                        <li><i class="icon icon-check"></i> Exclusive Crop Recommendations</li>
+                        <li><i class="icon icon-check"></i> 24/7 Priority Support</li>
+                    </ul>
+                </div>
+                <div class="plan-footer">
+                    <button class="btn" onclick="openModal('Premium', 12.99)">Subscribe</button>
+                    <p class="plan-reviews"><i class="icon icon-star"></i> Rated 5.0 by 800 users</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <h2 class="section-title">What Farmers Are Saying</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-card">
+                <p class="testimonial-text">"CropCare has completely transformed how we manage our crops. The reports are detailed and the support is top-notch!"</p>
+                <h4 class="testimonial-author">- John Doe, Texas</h4>
+            </div>
+            <div class="testimonial-card">
+                <p class="testimonial-text">"The drone analytics alone are worth the price! Our yields have increased since we started using CropCare Premium."</p>
+                <h4 class="testimonial-author">- Maria Gonzalez, California</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Confirmation -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Confirm Subscription</h2>
+            <p id="modal-plan-details"></p>
+            <p>Are you sure you want to subscribe to the <strong id="plan-name"></strong> plan for <strong id="plan-price"></strong>/month?</p>
+            <button id="confirm-subscribe" class="btn">Confirm</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-socials">
+                <a href="#"><i class="icon icon-facebook"></i></a>
+                <a href="#"><i class="icon icon-twitter"></i></a>
+                <a href="#"><i class="icon icon-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="subscription.js"></script>
+</body>
+</html>

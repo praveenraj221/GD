@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cropcare</title>
+    <link rel="stylesheet" href="home.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    
+    
+
+    <div id="cursor">Scroll</div>
+    <nav style="background-color: #2c3e50; padding: 10px;">
+        <h1 style="color: white;">Cropcare</h1>
+
+        <div class="nav-items">
+            <ul>
+                <li><a href="home.html" style="color: white;">Home</a></li>
+                <li><a href="#" style="color: white;">Feature</a></li>
+                <li><a href="Disease_app/templates/disease_prediction.html" style="color: white;">CropCheck</a></li>
+                <li><a href="our_team.html" style="color: white;">Our team</a></li>
+                <li><a href="chatbot/chatbot.html" style="color: white;">Chatbot</a></li>
+                <li><a href="location_crop.html" style="color: white;">Location</a></li>
+
+            </ul>
+            <div>
+                <button> <a href="login.html">signup</a> </button>
+            </div>
+        </div>
+    </nav>
+    <div id="hero">
+
+        <video autoplay muted loop playsInline>
+            <source src="assets/12404173_3840_2160_60fps.mp4" type="video/mp4">
+        </video>
+        
+        <div class="content" style="text-align: center; padding: 20px;">
+            <div class="content-text">
+                <h2 style="font-size: 3em; color: white;">CROPCARE</h2>
+
+                <p>Maximizing yields,Minimizing water</p>
+            </div>
+        </div>
+    </div>
+
+         <!-- Disease Alert Notification -->
+            <div class="disease-alert" style="background-color: #ffcc00; color: #333; padding: 15px; border-radius: 5px; cursor: pointer;" onclick="goToSubscriptionPage()">
+
+            <span>Alert:</span>Blight detected in 15% of maize crops, primarily affecting the northern area. | Common rust observed in 22% of crops, with higher severity in the central fields. | Gray Leaf Spot found in 18% of the region, impacting both irrigated and non-irrigated areas.
+    
+            </div>
+
+        <div id="features" style="background-color: #E0F7FA; padding: 50px;">
+
+        <div class="feature-title">
+            <h3>Features</h3>
+            <p>Our aim is to make it quick and easy for you to monitor your crops.Your crop health data syncs across
+                your devices, so you can track progress and get updates anytime, anywhere.</p>
+        </div>
+        <div class=" feature-content">
+            <div>
+                <img src="assets/img1.jpg" alt="drone">
+            </div>
+            <div class=" feature-part2">
+                <h4>Monitor Your Crops in One Click
+                </h4>
+                <p>Effortlessly track crop health with a single click. Upload your crop images and get instant insights
+                    to optimize your farming practices</p>
+                <button>More info</button>
+            </div>
+        </div>
+    </div>
+    <div id="disease">
+        <div class=" feature-content">
+            <div class=" feature-part2">
+                <h4>Disease Detection
+                </h4>
+                <p>Our advanced disease detection feature quickly identifies potential issues in your crops. With just a
+                    few clicks, you can access detailed insights and predictions, helping you take proactive measures
+                    before problems escalate.
+
+                </p>
+                <button>More info</button>
+            </div>
+            <div>
+                <img src="assets/img2.jpg" alt="drone">
+            </div>
+        </div>
+    </div>
+    <div id="insights">
+        <div class=" feature-content">
+            <div>
+                <img src="assets/img3.jpg" alt="drone">
+            </div>
+            <div class=" feature-part2">
+                <h4>Share Your Crop Insights
+                </h4>
+                <p>Effortlessly share your crop health reports and insights with others. Create a shareable link with
+                    just a click, making it easy to collaborate with fellow farmers or experts for better crop
+                    management.</p>
+                <button>More info</button>
+            </div>
+        </div>
+    </div>
+    <div id="insightss">
+        <div class=" feature-content premium">
+            <div class=" feature-part2">
+                <h4>Go Premium for Free
+                </h4>
+                <ul class="features-list">
+                    <div class="feature-item">
+                        <span class="tick">✔</span>
+                        <li>Monitor Multiple Fields</li>
+                    </div>
+                    <div class="feature-item">
+                        <span class="tick">✔</span>
+                        <li>Track Crop Health Trends</li>
+                    </div>
+                    <div class="feature-item">
+                        <span class="tick">✔</span>
+                        <li>Detailed Yield Analysis</li>
+                    </div>
+                    <div class="feature-item">
+                        <span class="tick">✔</span>
+                        <li>AI-powered Disease Prediction</li>
+                    </div>
+                </ul>
+                <button class="btn">Start my free trial</button>
+            </div>
+            <div>
+                <img src="assets/img4.jpg" alt="drone">
+            </div>
+        </div>
+    </div>
+
+   
+
+        <div class="credit" style="text-align: center; padding: 20px;">
+
+        <a href="https://youtu.be/-hj4xwmUwcc?si=BR3rWzgLeraFIX2U" target="_blank"><span>Skycoders</span> | all
+            rights reserved</a>
+    </div>
+
+    </div>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="home.js"></script>
+</body>
+
+</html>
