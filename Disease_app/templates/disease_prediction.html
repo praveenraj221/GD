@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #f3f7e7;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Disease Detection - CropCare</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/disease_prediction.css') }}">
+</head>
+
+<body>
+    <div class="container" style="padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+        <h1>🌱 Crop Disease Detection</h1>
+        <div id="loading" class="hidden">Loading...</div>
+
+        <p>Upload an image of your crop leaf to detect diseases.</p>
+
+        <div class="upload-section">
+            <input type="file" id="imageUpload" accept="image/*">
+            <label for="imageUpload" class="upload-btn">Choose Image</label>
+            <img id="previewImage" src="" alt="Image Preview" class="hidden">
+        </div>
+
+        <button id="detectBtn">🔍 Detect Disease</button>
+        <h3 id="result"></h3>
+        <h3 id="confidence"></h3>
+    </div>
+
+    <!-- JavaScript file should be at the bottom -->
+    <script src="{{ url_for('static', filename='js/disease_prediction.js') }}"></script>
+</body>
+
+</html>

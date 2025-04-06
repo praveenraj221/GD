@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Changed font to Poppins for better aesthetics */
+    background-color: #f3f7e7;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #228B22; /* Heading color for better visibility */
+    font-weight: bold; /* Added bold font for emphasis */
+}
+
+
+.upload-section {
+    margin: 20px 0;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-btn {
+    background-color: #228B22;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease; /* Added transition for hover effect */
+}
+
+.upload-btn:hover {
+    background-color: #1e7e1e; /* Darker shade on hover */
+}
+
+
+#previewImage {
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333; /* Result text color */
+    padding: 10px; /* Added padding for better spacing */
+}
+
+
+#loading {
+    position: absolute; /* Center the loading message */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #4CAF50; /* Green color for loading text */
+    font-weight: bold;
+    transition: opacity 0.3s ease; /* Added transition for smooth appearance */
+}
