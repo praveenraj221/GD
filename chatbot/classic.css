@@ -1,0 +1,158 @@
+/* Apply a global background gradient */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f093fb, #f5576c, #4facfe);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Gradient animation for background */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Container for the form */
+.container {
+    width: 350px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+/* Form title styling */
+.form-title {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Input group */
+.input-group {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 25px;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;  
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+
+/* Focus effect on input */
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -10px;
+    left: 20px;
+    color: #f093fb;
+    font-size: 12px;
+}
+
+/* Icon styling inside input */
+.input-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 18px;
+}
+
+/* Button styling with gradient and animation */
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #ee0979, #ff6a00);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Divider between form options */
+.or {
+    color: #fff;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Social media icons */
+.icons i {
+    font-size: 30px;
+    color: #fff;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.icons i:hover {
+    color: #ff6a00;
+    transform: scale(1.1);
+}
+
+/* Links section styling */
+.links {
+    color: #fff;
+    margin-top: 20px;
+}
+
+.links button {
+    background: none;
+    border: none;
+    color: #f093fb;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.recover a {
+    color: #f093fb;
+    text-decoration: none;
+}
+
+.recover a:hover {
+    text-decoration: underline;
+}
+
+/* Make it responsive */
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}

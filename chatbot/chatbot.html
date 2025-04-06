@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Advanced Chatbot with Image Input</title>
+    <style>
+        /* Updated styles for a better design */
+        body {
+            background-image: url('paint.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #ffffff;
+        }
+
+        #chatbox {
+            width: 90%;
+            max-width: 500px;
+            height: 80vh;
+            background: linear-gradient(135deg, rgb(91, 8, 95), rgba(42, 82, 152, 0.9));
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            margin: 20px auto;
+        }
+
+        #messages {
+            flex-grow: 1;
+            overflow-y: auto;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+
+        #inputField {
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+            backdrop-filter: blur(10px);
+        }
+
+        #inputField input {
+            flex-grow: 1;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #333;
+            outline: none;
+        }
+
+        #inputField button {
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff9800;
+            color: white;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+
+        #inputField button:hover {
+            background-color: #e68900;
+        }
+
+        #imageInput {
+            display: none;
+        }
+
+        .message {
+            margin: 10px 0;
+            padding: 8px 12px;
+            border-radius: 10px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+
+        .message.bot {
+            background-color: rgba(255, 255, 255, 0.3);
+            text-align: left;
+            color: #e3eaf7;
+            align-self: flex-start;
+        }
+
+        .message.user {
+            background-color: rgba(255, 152, 0, 0.8);
+            text-align: right;
+            color: white;
+            align-self: flex-end;
+        }
+
+        #loadingIndicator {
+            color: #ff9800;
+            text-align: center;
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        p {
+            padding: 10px;
+            color: #e3eaf7;
+            text-align: center;
+        }
+
+        p a {
+            color: #ff9800;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        p a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            #chatbox {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="chatbox">
+        <div id="messages"></div>
+        <div id="inputField">
+            <input type="text" id="textInput" placeholder="Type a message...">
+            <button id="sendBtn">Send</button>
+            <button id="voiceBtn">🎤</button>
+            <input type="file" id="imageInput" accept="image/*">
+            <button id="imageBtn">📷</button>
+        </div>
+    </div>
+    <p>To interact with a doctor <a href="user2.html">click here</a></p>
+    <script src="chatbot.js"></script>
+</body>
+</html>

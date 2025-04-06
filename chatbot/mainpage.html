@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayurvedic Wellness</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  <!-- Main Navigation -->
+  <header class="main-header">
+    <nav>
+      <ul>
+        <li><a href="#" class="nav-link" data-target="home">Home</a></li>
+        <li><a href="#" class="nav-link" data-target="herbs">Ayurvedic Herbs</a></li>
+        <li><a href="#" class="nav-link" data-target="diseases">Diseases & Cures</a></li>
+        <li><a href="#" class="nav-link" data-target="consultation">Consultation</a></li>
+        <li><a href="#" class="nav-link" data-target="blog">Blog</a></li>
+        <li><a href="#" class="nav-link" data-target="contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home-section" id="home">
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>Discover Ayurvedic Healing</h1>
+            <p>Explore the natural path to health and wellness with personalized Ayurvedic solutions.</p>
+            <button class="btn-hero" onclick="navigateToPage()">Explore Now</button>
+        </div>
+    </header>
+    
+    <main>
+        <section class="history-section">
+            <h2>History of Ayurveda</h2>
+            <ul class="history">
+                <li>
+                    Ayurveda, the "Science of Life," originated in India over 5,000 years ago. It is a holistic approach to health that focuses on balancing the body, mind, and spirit. The principles of Ayurveda are based on the belief that health and wellness depend on a delicate balance between the three fundamental bodily doshas: Vata, Pitta, and Kapha. 
+                </li>
+                <li>
+                    The roots of Ayurveda can be traced back to ancient texts, known as the Vedas, which are some of the oldest scriptures in the world. The knowledge was passed down through generations by sages and practitioners who used a combination of herbal medicine, diet, and lifestyle modifications to maintain health and treat diseases. 
+                </li>
+                <li>
+                    Today, Ayurveda is recognized globally for its natural and preventive approach to health. It emphasizes personalized treatment plans and the use of natural herbs, minerals, and therapeutic methods, making it a valuable complement to modern medicine.
+                </li>
+            </ul>
+        </section>
+    </main>
+  </section>
+
+  <!-- Ayurvedic Herbs Section -->
+  <section class="ayurvedic-herbs" id="herbs" style="display:none;">
+    <h2>Ayurvedic Herbs</h2>
+    <div class="herb-container">
+        <div class="herbs-left">
+    <div class="herb-item">
+        <h3>Ashwagandha</h3>
+        <p>Reduces stress, boosts energy levels, and improves concentration.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Tulsi (Holy Basil)</h3>
+        <p>Strengthens the immune system, combats stress, and improves respiratory health.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Turmeric</h3>
+        <p>Powerful anti-inflammatory and antioxidant.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Ginger</h3>
+        <p>Aids digestion, reduces nausea, and relieves pain and inflammation.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Neem</h3>
+        <p>Detoxifies the body, improves skin health, and supports the immune system.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Amla (Indian Gooseberry)</h3>
+        <p>High in vitamin C, supports heart health, and boosts immunity.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Brahmi</h3>
+        <p>Enhances memory, reduces anxiety, and promotes mental clarity.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Fennel (Saunf)</h3>
+        <p>Aids digestion, reduces bloating, and freshens breath.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Licorice (Mulethi)</h3>
+        <p>Soothes throat irritation, improves digestive health, and supports adrenal function.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Cardamom</h3>
+        <p>Aids digestion, freshens breath, and may reduce blood pressure.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Holy Basil (Tulsi)</h3>
+        <p>Relieves stress, improves respiratory health, and combats infections.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Fenugreek (Methi)</h3>
+        <p>Regulates blood sugar, aids digestion, and promotes milk production in nursing mothers.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Saffron</h3>
+        <p>Boosts mood, improves skin health, and may enhance memory.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Cinnamon</h3>
+        <p>Regulates blood sugar, has anti-inflammatory properties, and aids digestion.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Cumin (Jeera)</h3>
+        <p>Improves digestion, boosts immunity, and may have antimicrobial properties.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Moringa</h3>
+        <p>Rich in vitamins and minerals, boosts energy, and supports brain health.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Bitter Gourd (Karela)</h3>
+        <p>Regulates blood sugar, aids digestion, and supports liver health.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Aloe Vera</h3>
+        <p>Hydrates skin, aids digestion, and supports detoxification.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Jatamansi</h3>
+        <p>Calms the mind, improves sleep, and enhances memory.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Pippali (Long Pepper)</h3>
+        <p>Aids digestion, improves respiratory health, and enhances metabolism.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Gotu Kola (Centella Asiatica)</h3>
+        <p>Improves cognitive function, promotes wound healing, and reduces anxiety.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Shatavari</h3>
+        <p>Supports female reproductive health, boosts immunity, and enhances vitality.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Black Seed (Nigella Sativa)</h3>
+        <p>Supports immune function, aids digestion, and may reduce inflammation.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Guggul</h3>
+        <p>Supports weight loss, reduces cholesterol, and enhances joint health.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Raspberry Leaf</h3>
+        <p>Supports women's health, eases menstrual discomfort, and may improve digestion.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Sage</h3>
+        <p>Improves cognitive function, reduces inflammation, and supports oral health.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Valerian Root</h3>
+        <p>Promotes relaxation, improves sleep quality, and reduces anxiety.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Coriander (Dhania)</h3>
+        <p>Aids digestion, reduces bloating, and may lower blood sugar levels.</p>
+    </div>
+    
+</div>
+<div class="herbs-right">
+    <div class="herb-item">
+        <h3>Chrysanthemum</h3>
+        <p>Improves vision, reduces inflammation, and supports liver health.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Catnip</h3>
+        <p>Aids digestion, promotes relaxation, and may relieve headaches.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Eucalyptus</h3>
+        <p>Improves respiratory health, reduces congestion, and has antiseptic properties.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Peppermint</h3>
+        <p>Relieves headaches, aids digestion, and improves mental clarity.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Willow Bark</h3>
+        <p>Reduces pain and inflammation, may support joint health.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Hibiscus</h3>
+        <p>Lowers blood pressure, supports heart health, and has antioxidant properties.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Rosemary</h3>
+        <p>Improves memory, enhances mood, and supports hair health.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Oregano</h3>
+        <p>Has antimicrobial properties, supports respiratory health, and aids digestion.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Thyme</h3>
+        <p>Supports respiratory health, has antimicrobial properties, and aids digestion.</p>
+    </div>
+    <div class="herb-item">
+        <h3>St. John's Wort</h3>
+        <p>Supports mental health, may alleviate symptoms of depression, and reduces anxiety.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Lemon Balm</h3>
+        <p>Promotes relaxation, improves sleep, and supports digestive health.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Chicory</h3>
+        <p>Supports liver health, improves digestion, and may reduce inflammation.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Horse Chestnut</h3>
+        <p>Supports vein health, reduces swelling, and may relieve symptoms of varicose veins.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Butterbur</h3>
+        <p>Reduces migraines, supports respiratory health, and alleviates allergies.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Reishi Mushroom</h3>
+        <p>Supports immune function, reduces stress, and promotes relaxation.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Cranberry</h3>
+        <p>Supports urinary tract health, rich in antioxidants, and may reduce infection risk.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Uva Ursi</h3>
+        <p>Supports urinary tract health, has antibacterial properties, and reduces inflammation.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Cherry</h3>
+        <p>Reduces inflammation, supports joint health, and may relieve gout symptoms.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Flaxseed</h3>
+        <p>Rich in omega-3 fatty acids, supports heart health, and aids digestion.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Local Honey</h3>
+        <p>May alleviate allergies, supports immune function, and has antibacterial properties.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Nettle</h3>
+        <p>Reduces allergy symptoms, supports urinary health, and has anti-inflammatory properties.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Guggul</h3>
+        <p>Supports weight loss, reduces cholesterol, and enhances joint health.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Green Tea</h3>
+        <p>Rich in antioxidants, supports metabolism, and promotes heart health.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Alfalfa</h3>
+        <p>Rich in vitamins and minerals, supports digestion, and improves bone health.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Red Clover</h3>
+        <p>Supports hormonal balance, improves skin health, and may alleviate menopause symptoms.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Licorice Root</h3>
+        <p>Soothes throat irritation, supports adrenal function, and improves digestive health.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Marshmallow Root</h3>
+        <p>Soothes digestive tract, supports respiratory health, and hydrates skin.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Peppermint</h3>
+        <p>Relieves headaches, aids digestion, and improves mental clarity.</p>
+    </div>
+    <div class="herb-item">
+        <h3>Lavender</h3>
+        <p>Reduces anxiety, promotes relaxation, and improves sleep quality.</p>
+    </div>
+    </div>
+</div>
+  </section>
+
+  <!-- Diseases & Cures Section -->
+  <section class="diseases-cures" id="diseases" style="display:none;">
+    <h2>Diseases & Cures</h2>
+    <div class="disease-item">
+        <h3>Diabetes</h3>
+        <p>Ayurvedic remedies: Bitter melon, fenugreek, and amla.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Hypertension</h3>
+        <p>Ayurvedic remedies: Hibiscus and garlic.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Asthma</h3>
+        <p>Ayurvedic remedies: Tulsi and pippali.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Arthritis</h3>
+        <p>Ayurvedic remedies: Ginger and turmeric.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Insomnia</h3>
+        <p>Ayurvedic remedies: Valerian root and ashwagandha.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Digestive Issues</h3>
+        <p>Ayurvedic remedies: Ginger and fennel.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Skin Conditions</h3>
+        <p>Ayurvedic remedies: Neem and aloe vera.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Weight Gain</h3>
+        <p>Ayurvedic remedies: Guggul and moringa.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Stress</h3>
+        <p>Ayurvedic remedies: Ashwagandha and brahmi.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Heart Disease</h3>
+        <p>Ayurvedic remedies: Garlic and turmeric.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Common Cold</h3>
+        <p>Ayurvedic remedies: Tulsi and ginger.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Flu</h3>
+        <p>Ayurvedic remedies: Elderberry and echinacea.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Constipation</h3>
+        <p>Ayurvedic remedies: Triphala and psyllium.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Heartburn</h3>
+        <p>Ayurvedic remedies: Licorice root and marshmallow root.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Allergies</h3>
+        <p>Ayurvedic remedies: Local honey and nettle.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Menstrual Disorders</h3>
+        <p>Ayurvedic remedies: Shatavari and ginger.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Weight Management</h3>
+        <p>Ayurvedic remedies: Guggul and green tea.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Thyroid Disorders</h3>
+        <p>Ayurvedic remedies: Ashwagandha and guggul.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Anemia</h3>
+        <p>Ayurvedic remedies: Amla and beetroot.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Cirrhosis</h3>
+        <p>Ayurvedic remedies: Milk thistle and dandelion root.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Osteoporosis</h3>
+        <p>Ayurvedic remedies: Alfalfa and red clover.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Throat Infections</h3>
+        <p>Ayurvedic remedies: Licorice root and honey.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Sinusitis</h3>
+        <p>Ayurvedic remedies: Eucalyptus and ginger.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Psoriasis</h3>
+        <p>Ayurvedic remedies: Turmeric and aloe vera.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Chronic Fatigue Syndrome</h3>
+        <p>Ayurvedic remedies: Ashwagandha and ginseng.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Nerve Disorders</h3>
+        <p>Ayurvedic remedies: Borage oil and ginkgo biloba.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Hair Loss</h3>
+        <p>Ayurvedic remedies: Amla and bhringraj.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Cancers</h3>
+        <p>Ayurvedic remedies: Turmeric and ashwagandha.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Autoimmune Disorders</h3>
+        <p>Ayurvedic remedies: Ashwagandha and boswellia.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Hemorrhoids</h3>
+        <p>Ayurvedic remedies: Witch hazel and aloe vera.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Kidney Stones</h3>
+        <p>Ayurvedic remedies: Chanca piedra and lemon juice.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Gout</h3>
+        <p>Ayurvedic remedies: Cherry and celery seed.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Menopause Symptoms</h3>
+        <p>Ayurvedic remedies: Black cohosh and red clover.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Diarrhea</h3>
+        <p>Ayurvedic remedies: Chamomile and ginger.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Stomach Ulcers</h3>
+        <p>Ayurvedic remedies: Cabbage and licorice root.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Chronic Infections</h3>
+        <p>Ayurvedic remedies: Garlic and oregano.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Cold Sores</h3>
+        <p>Ayurvedic remedies: Lemon balm and licorice.</p>
+    </div>
+    <div class="disease-item">
+        <h3>PMS</h3>
+        <p>Ayurvedic remedies: Chaste tree and dong quai.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Sunburn</h3>
+        <p>Ayurvedic remedies: Aloe vera and chamomile.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Odontalgia (Toothache)</h3>
+        <p>Ayurvedic remedies: Clove oil and ginger.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Facial Conditions</h3>
+        <p>Ayurvedic remedies: Turmeric and sandalwood.</p>
+    </div>
+    <div class="disease-item">
+        <h3>High Cholesterol</h3>
+        <p>Ayurvedic remedies: Garlic and turmeric.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Psoriatic Arthritis</h3>
+        <p>Ayurvedic remedies: Turmeric and omega-3.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Hepatitis</h3>
+        <p>Ayurvedic remedies: Milk thistle and dandelion.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Candida</h3>
+        <p>Ayurvedic remedies: Garlic and oregano.</p>
+    </div>
+    <div class="disease-item">
+        <h3>Fatty Liver</h3>
+        <p>Ayurvedic remedies: Milk thistle and artichoke.</p>
+    </div>
+  </section>
+
+  <!-- Consultation Section -->
+  <section class="consultation" id="consultation" style="display:none;">
+    <h2>Book a Consultation</h2>
+    <p>Speak with an Ayurvedic doctor or interact with our AI-powered chatbot for personalized advice.</p>
+    <button class="btn-consultation" onclick="toggleBookingForm()">Book Now</button>
+    <a href="chatbot.html" class="btn-chatbot">Chat with AI</a>
+  </section>
+
+  <!--book now section-->
+  <section id="book-now" class="booking-section" style="display: none;">
+    <h2>Book Your Consultation Now</h2>
+    <p>Take the first step towards holistic healing with a personalized Ayurvedic consultation.</p>
+
+    <form action="submit-booking.php" method="POST">
+        <label for="consultation-type">Select Consultation Type:</label>
+        <select id="consultation-type" name="consultation-type">
+            <option value="initial">Initial Consultation</option>
+            <option value="follow-up">Follow-up Consultation</option>
+            <option value="specialized">Specialized Session</option>
+        </select></br>
+
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required></br>
+
+        <label for="time">Select Time:</label>
+        <input type="time" id="time" name="time" required></br>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required></br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required></br>
+
+        <label for="phone">Your Phone Number:</label>
+        <input type="tel" id="phone" name="phone"></br>
+
+        <label for="notes">Additional Notes:</label>
+        <textarea id="notes" name="notes" rows="4"></textarea></br>
+
+        <button type="submit" class="btn-hero">Book Now</button>
+    </form>
+
+    <div class="pricing-info">
+        <h3>Consultation Pricing</h3>
+        <p>Initial Consultation: $50</p>
+        <p>Follow-up Consultation: $30</p>
+        <p>Specialized Session: $70</p>
+    </div>
+
+    <div class="consultant-profiles">
+        <h3>Meet Our Consultants</h3>
+        <div class="consultant">
+            <h4>Dr. Jeya Prasanna J</h4>
+            <p>Expert in herbal medicine and dietary recommendations.</p>
+            <p>Rating: <span class="rating" data-rating="4">★★★★☆</span></p>
+        <div class="star-rating" data-consultant="Dr. Aditi Sharma">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        </div>
+        <div class="consultant">
+            <h4>Dr. Manikandan T</h4>
+            <p>Specialist in stress management and holistic therapies.</p>
+            <p>Rating: <span class="rating" data-rating="4">★★★★☆</span></p>
+        <div class="star-rating" data-consultant="Dr. Aditi Sharma">
+            <span class="star" data-value="1">★</span>
+            <span class="star" data-value="2">★</span>
+            <span class="star" data-value="3">★</span>
+            <span class="star" data-value="4">★</span>
+            <span class="star" data-value="5">★</span>
+        </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Blog Section -->
+  <section class="blog" id="blog" style="display:none;">
+    <h2>Latest Blog Posts</h2>
+    <div class="blog">
+        <div class="container">
+            <h2>Ayurvedic Insights Blog</h2>
+            <div class="blog-post">
+                <h3>The Benefits of Ayurvedic Herbs</h3>
+                <p>
+                    Ayurveda, one of the world’s oldest holistic healing systems, uses herbs as a vital component for treatment. Herbs like Ashwagandha, Turmeric, and Neem are known for their natural healing properties. They are used to boost immunity, improve digestion, and promote overall wellness.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+    
+            <div class="blog-post">
+                <h3>Understanding the Doshas: Vata, Pitta, and Kapha</h3>
+                <p>
+                    In Ayurveda, balance is key. The body is governed by three doshas: Vata, Pitta, and Kapha. Each person has a unique combination of these doshas that influences their health and personality. Discover how to balance your doshas through diet, lifestyle, and herbal remedies.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+    
+            <div class="blog-post">
+                <h3>Ayurvedic Remedies for Common Ailments</h3>
+                <p>
+                    From headaches to digestive issues, Ayurvedic remedies provide natural solutions for common health problems. Learn how to use herbs and lifestyle changes to treat ailments like colds, fatigue, and skin conditions without side effects.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="blog-post">
+                <h3>The Role of Diet in Ayurveda</h3>
+                <p>
+                    In Ayurveda, diet plays a crucial role in maintaining the balance of the doshas. Foods are categorized based on their qualities, and eating according to your dosha type helps keep your body and mind in harmony. Learn about Ayurvedic dietary guidelines for Vata, Pitta, and Kapha.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            
+            <div class="blog-post">
+                <h3>Ayurvedic Morning Routine for a Healthy Start</h3>
+                <p>
+                    Ayurveda emphasizes a daily routine or "Dinacharya" for optimal health. Starting your day with simple practices like oil pulling, tongue scraping, and yoga can detoxify the body, improve digestion, and set a positive tone for the day.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            
+            <div class="blog-post">
+                <h3>Ayurveda and Stress Management</h3>
+                <p>
+                    Modern lifestyles can be stressful, but Ayurveda offers natural ways to manage stress. Techniques like meditation, breathing exercises (Pranayama), and herbal adaptogens such as Ashwagandha can help reduce stress and promote mental clarity.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            
+            <div class="blog-post">
+                <h3>Detoxifying Your Body the Ayurvedic Way</h3>
+                <p>
+                    Detoxification, or "Panchakarma," is a core practice in Ayurveda for removing toxins from the body. Learn about gentle cleansing techniques using herbal formulations, dietary changes, and lifestyle adjustments to restore balance and improve overall well-being.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            
+            <div class="blog-post">
+                <h3>Herbal Teas for Health and Healing</h3>
+                <p>
+                    Ayurvedic herbal teas can be tailored to suit different health needs, from boosting immunity to aiding digestion. Discover popular blends like Tulsi tea for respiratory health, Ginger tea for digestion, and Brahmi tea for calming the mind.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            
+            <div class="blog-post">
+                <h3>The Importance of Seasonal Practices in Ayurveda</h3>
+                <p>
+                    Ayurveda advises adapting your lifestyle and diet according to the seasons to maintain balance. Learn about the recommended practices for each season, such as using warming spices in winter, light foods in summer, and detoxifying herbs in spring.
+                </p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            
+        </div>
+    </div>
+    
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="contact-us" id="contact" style="display:none;">
+    <h2>Contact Us</h2>
+    <p>We'd love to hear from you! Reach out through the form below.</p>
+    
+    <div class="contact-container">
+      <form class="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required></br>
+        <input type="email" id="email" placeholder="Your Email" required></br>
+        <textarea id="message" placeholder="Your Message" required></textarea></br>
+        <button type="submit" class="btn-submit">Send Message</button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>Email: jeyaprasannaj22cb@psnacet.edu.in</p>
+        <p>Phone: +123 456 7890</p>
+
+        <div class="social-media">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Ayurvedic Wellness. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
